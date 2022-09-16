@@ -14,7 +14,7 @@ resentment and ready to focus on the business at hand.
 
   - [x] Chapter 8
   - [x] Chapter 9
-  - [ ] Chapter 10
+  - [x] Chapter 10
   - [ ] Chapter 11
   - [ ] Chapter 12
   - [ ] Chapter 13
