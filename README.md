@@ -12,8 +12,8 @@ resentment and ready to focus on the business at hand.
 
 ## Required
 
-  - [ ] Chapter 8
-  - [ ] Chapter 9
+  - [x] Chapter 8
+  - [x] Chapter 9
   - [ ] Chapter 10
   - [ ] Chapter 11
   - [ ] Chapter 12
