@@ -1,5 +1,6 @@
 package com.bignerdranch.android.criminalintent
 
+import android.opengl.Visibility
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -25,6 +26,9 @@ class CrimeFragment: Fragment(), FragmentResultListener {
     private lateinit var titleField: EditText
     private lateinit var dateButton: Button
     private lateinit var solvedCheckBox: CheckBox
+    private lateinit var policeCheckBox: CheckBox
+    private lateinit var contactPoliceButton: Button
+
     private val crimeDetailViewModel: CrimeDetailViewModel by lazy {
         ViewModelProvider(this)[CrimeDetailViewModel::class.java]
     }
@@ -46,6 +50,8 @@ class CrimeFragment: Fragment(), FragmentResultListener {
         titleField = view.findViewById(R.id.crime_title) as EditText
         dateButton = view.findViewById(R.id.crime_date) as Button
         solvedCheckBox = view.findViewById(R.id.crime_solved) as CheckBox
+        policeCheckBox = view.findViewById(R.id.crime_police) as CheckBox
+        contactPoliceButton = view.findViewById(R.id.contact_police) as Button
 
         return view
     }
@@ -85,6 +91,12 @@ class CrimeFragment: Fragment(), FragmentResultListener {
             }
         }
 
+        policeCheckBox.apply {
+            setOnCheckedChangeListener { _, requiresPolice ->
+                crime.requiresPolice = requiresPolice
+            }
+        }
+
         dateButton.setOnClickListener {
             DatePickerFragment
                 .newInstance(crime.date, REQUEST_DATE)
@@ -104,6 +116,13 @@ class CrimeFragment: Fragment(), FragmentResultListener {
         solvedCheckBox.apply {
             isChecked = crime.isSolved
             jumpDrawablesToCurrentState()
+        }
+        policeCheckBox.apply {
+            isChecked = crime.requiresPolice
+            jumpDrawablesToCurrentState()
+        }
+        contactPoliceButton.apply {
+            visibility = if (crime.requiresPolice) View.VISIBLE else View.INVISIBLE
         }
     }
 
