@@ -21,7 +21,7 @@ resentment and ready to focus on the business at hand.
 
 
 ## Challenges
-- [ ] RecyclerView ViewTypes (page 193)
+- [x] RecyclerView ViewTypes (page 193)
 - [ ] Formatting the Date (page 220)
 - [ ] More Dialogs (page 274)
 - [ ] Empty View (page 290)
