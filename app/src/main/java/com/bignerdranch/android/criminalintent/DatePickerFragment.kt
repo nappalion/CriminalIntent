@@ -3,14 +3,16 @@ package com.bignerdranch.android.criminalintent
 import android.app.DatePickerDialog
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import java.util.*
 
+private const val TAG = "DatePickerFragment"
 private const val ARG_DATE = "date"
-private const val ARG_REQUEST_CODE = "requestCode"
-private const val RESULT_DATE_KEY = "requestCode"
+private const val ARG_REQUEST_CODE = "dateRequestCode"
+private const val RESULT_DATE_KEY = "dateRequestCode"
 
 class DatePickerFragment: DialogFragment() {
 
@@ -25,6 +27,7 @@ class DatePickerFragment: DialogFragment() {
             }
 
             val resultRequestCode = requireArguments().getString(ARG_REQUEST_CODE, "")
+            Log.d(TAG, resultRequestCode)
             setFragmentResult(resultRequestCode, result)
         }
 

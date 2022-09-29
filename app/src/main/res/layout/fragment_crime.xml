@@ -24,11 +24,25 @@
         android:layout_height="wrap_content"
         android:text="@string/crime_details_label"/>
 
+    <TextView
+        android:id="@+id/crime_date_time_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:text="Wed Nov 14 11:56 EST 2018" />
+
     <Button
         android:id="@+id/crime_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Wed Nov 14 11:56 EST 2018"/>
+        android:text="@string/crime_date_button" />
+
+    <Button
+        android:id="@+id/crime_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_time_button" />
 
     <CheckBox
         android:id="@+id/crime_solved"

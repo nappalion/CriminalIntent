@@ -6,6 +6,8 @@
     <string name="crime_solved_label">Solved</string>
     <string name="crime_police_label">Requires Police</string>
     <string name="crime_police_text">CLICK TO \nCONTACT \nPOLICE</string>
+    <string name="crime_time_button">SELECT A TIME</string>
+    <string name="crime_date_button">SELECT A DATE</string>
     <string name="new_crime">New Crime</string>
 
 </resources>
