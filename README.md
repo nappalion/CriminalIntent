@@ -24,6 +24,6 @@ resentment and ready to focus on the business at hand.
 - [x] RecyclerView ViewTypes (page 193)
 - [x] Formatting the Date (page 220)
 - [x] More Dialogs (page 274)
-- [ ] Empty View (page 290)
+- [x] Empty View (page 290)
 - [ ] Multiple Main Activities - Have both the list view and the detailed view fragments running at the same time
 - [ ] Custom Challenge
