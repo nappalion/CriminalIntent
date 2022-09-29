@@ -36,6 +36,12 @@ class CrimeRepository private constructor(context: Context) {
         }
     }
 
+    fun removeCrime(crime: Crime) {
+        executor.execute {
+            crimeDao.removeCrime(crime)
+        }
+    }
+
     companion object {
         private var INSTANCE: CrimeRepository? = null
 

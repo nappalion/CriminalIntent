@@ -10,4 +10,6 @@
     <string name="crime_date_button">SELECT A DATE</string>
     <string name="new_crime">New Crime</string>
 
+    <string name="no_crimes">There are no crimes.</string>
+
 </resources>
